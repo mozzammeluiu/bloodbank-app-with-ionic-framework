@@ -1,0 +1,80 @@
+page-home {
+   .btnSearch{
+    text-align: center !important;
+    margin-top: 40%;
+}
+
+  .btnDonate{
+    text-align: center !important;
+    
+  }
+}
+
+ion-content{
+   // background-image: linear-gradient(rgba(160, 3, 3, 0.6),rgba(160, 3, 3, 0.9)),url('../assets/backGr.png');
+    background-image: linear-gradient(rgba(169, 0, 0, 0.6),rgba(169, 0, 0, 0.6)), url('../assets/gray0.jpg');
+    background-size: cover;
+    background-position: center;
+
+ 
+     
+}
+.nav
+{
+  box-shadow: none;
+  background-color: #BD0100;
+}
+.go{
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  margin-top: 5px;
+  background-color: #EB5D3F;
+}
+.cl{
+  size: 10px;
+}
+.ser{
+  background-color: #EB5D3F;
+}
+
+
+
+.btnSearch,.btnDonate,.card-ios,.home-card
+{
+  background-color: rgba(0,0,0,0);
+}
+.I-Card
+{
+  background-color:rgba(169, 0, 0,0.5);
+  color: whitesmoke;
+}
+.I-Card ion-card-title a
+{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.I-Card p
+{
+  //color:#BDBDBD;
+  color: coral;
+  font-size:15px;
+  font-weight: 500;
+  
+}
+.I-Card h2
+{
+  color:white;
+  font-weight: 700;
+  font-size: 18px;
+  
+}
+.I-Card ion-card-title a:hover
+{
+  font-size:18px;
+  color: #f44336;
+
+
+}

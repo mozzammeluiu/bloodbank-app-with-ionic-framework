@@ -1,0 +1,50 @@
+  <ion-header>
+
+  <ion-navbar no-shadow color="danger" >
+    <ion-title *ngIf="don">Blood Bank </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only  (click)="clicked()"> 
+        <ion-icon *ngIf="don" name="search"></ion-icon>
+        <button *ngIf="!don" ion-button icon-only  (click)="clicked()"> 
+        <ion-icon name="close" class="cl"></ion-icon>
+        </button>
+      </button>
+    </ion-buttons>
+        
+ <ion-grid>
+   <!-- <ion-item  *ngIf="donate">-->
+    <ion-row justify-content-start>
+    <ion-col col-9>
+      <ion-searchbar *ngIf="donate" [(ngModel)]= "data.search" name="search" type="text" placeholder="search..." class="ser"></ion-searchbar>
+    </ion-col>
+    <ion-col col-1>
+     <button *ngIf="donate" ion-button round color="light" (click)="sBlood()" class="go">Go</button>
+    </ion-col>
+    </ion-row>
+  <!--</ion-item>-->
+   </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-lines>
+
+  <ion-refresher (ionRefresh)="forceReload($event)">
+    <ion-refresher-content refreshingText="Reload from API...">
+    </ion-refresher-content>
+  </ion-refresher>
+  
+  <ion-list >
+    <ion-item class="home-card" no-lines *ngFor="let item of hospital| async">
+      <ion-card class="I-Card">
+        <img src="{{item.images}}"/>
+        <ion-card-content >
+            <h2>{{item.name}}</h2>
+            <ion-card-title> <a href="tel:{{item.phone}}">Phone :  {{item.phone}}</a></ion-card-title>
+            <p text-wrap> Address : {{item.address}} </p>
+            <ion-card-title></ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

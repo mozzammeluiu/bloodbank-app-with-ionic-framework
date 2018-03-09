@@ -1,0 +1,74 @@
+
+
+.Dlist 
+{
+    //background-image: linear-gradient(rgba(160, 3, 3, 0.4),rgba(160, 3, 3, 0.3)),url('../assets/li.jpg');
+    
+    //background-position:center;
+    //background-size:cover;
+    color : white; 
+    //background-color:#ff6f00;
+    background-color: rgba(0,0,0,0);
+    padding-block-end: 6px;
+    margin-bottom: 2px;
+    
+}
+
+.Dlist ion-avatar
+{
+     background-image: url('../assets/list.png');
+     background-size:cover;
+     height: 55px;
+     width: 40px;
+     text-align: center;
+     padding-top: 17px; 
+     font-size:18px;
+     color: white;
+}
+.cIcon
+{
+ 
+ color:white;
+
+}
+.cIcon:hover
+{
+  color: greenyellow;
+}
+
+.Dlist h2
+{
+  font-weight: 800;
+}
+.Dlist h3
+{
+  font-weight: 600;
+}
+.Dlist p
+{
+  color: coral;
+  font-weight: 500;
+}
+//Scroll top 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 65px;
+  right: 30px;
+  z-index:10000;
+  outline: none;
+  background-color:#B40404;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius:15px;
+  width: 45px;
+  height: 50px;
+  font-size: 20px;
+  
+}
+
+#myBtn:hover:active {
+  background-color: coral;
+  color: #B40404;
+}

@@ -1,0 +1,54 @@
+
+<ion-header>
+
+  <ion-navbar color = "danger">
+    <ion-title>Manage Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <ion-list >
+    <ion-item>
+      <ion-label floating color="appbase">Name</ion-label>
+      <ion-input  [(ngModel)]="userinfo.realname" type="text" value="{{realname}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="appbase">Email</ion-label>
+      <ion-input [(ngModel)]="userinfo.email" type="email" value="{{email}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">Phone No</ion-label>
+      <ion-input [(ngModel)]="userinfo.bloodgroup" type="text" value="{{bloodgroup}}"></ion-input>
+    </ion-item>
+
+        <ion-item>
+      <ion-label floating color="appbase">Password</ion-label>
+      <ion-input [(ngModel)]="userinfo.pass" type="text" value="{{pass}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">City</ion-label>
+      <ion-input [(ngModel)]="userinfo.location" type="text" value="{{location}}"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label floating color="appbase">Gender</ion-label>
+      <ion-input [(ngModel)]="userinfo.gender" type="text" value="{{gender}}"></ion-input>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="appbase">Last Donated</ion-label>
+      <ion-input [(ngModel)]="userinfo.lastdate" type="text" value="{{lastdate}}"></ion-input>
+    </ion-item>
+
+    <br>
+    <button ion-button block color="appbase" 
+    (click)="Update()">Update</button>
+
+  </ion-list>
+
+</ion-content>

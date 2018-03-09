@@ -1,0 +1,119 @@
+
+page-about {
+.feed 
+{
+    //background-image: linear-gradient(rgba(160, 3, 3, 0.4),rgba(160, 3, 3, 0.3)),url('../assets/li.jpg');
+    
+    //background-position:center;
+    //background-size:cover;
+    color : white; 
+    //background-color:#ff6f00;
+    background-color: rgba(0,0,0,0);
+    padding-block-end: 30px;
+   // margin-bottom: 2px;
+    text-align: justify;
+    
+}
+  .feed ion-card
+  {
+
+    background-color: rgba(0,0,0,0);
+
+  }
+  .comment
+  {
+    background-color:rgba(169, 0, 0,0.55);
+    color: white;
+  }
+
+.feed ion-avatar img
+{
+     //background-image: url('../assets/ff.jpg');
+     background-size:cover;
+     height: 40px;
+     width: 40px;
+     text-align: center;
+    // padding: 10px; 
+     font-size:18px;
+     color: white;
+}
+.del
+{
+ 
+ color:white;
+
+}
+.del:hover
+{
+  color: greenyellow;
+}
+
+.feed p
+{
+  color: coral;
+  font-weight: 600;
+  font-size: 15px;
+
+}
+
+.feed h2
+{
+  
+  font-size: 18px;
+  color: coral;
+  font-weight: 900;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.feed h3
+{
+  font-weight: 500;
+  color:#B40404;
+  font-size: 18px;
+}
+
+.feed h4
+{
+  vertical-align: middle;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.st h3
+{
+  color:coral;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: fantasy;
+}
+.st ion-icon
+{
+  color:orange  ;
+}
+
+.st h5
+{
+  font-weight: 450;
+}
+.comment2
+{
+  //background-color: rgba(187,174,174,0.8);
+  background-color: rgba(255,255,255,0.9);
+}
+.comment2 h2
+{
+  color:#FF6F00 ;
+}
+
+.comment2 h4
+{
+  color: #E65100;
+  font-size: 15px;
+}
+#text
+{
+    text-overflow: ellipsis;
+}
+
+}

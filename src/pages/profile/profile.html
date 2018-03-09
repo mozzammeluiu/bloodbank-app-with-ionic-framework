@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card">
+  
+   
+      
+       <ion-item class="ava" no-lines>
+          <ion-avatar>
+             <img src="assets/profile.jpg">
+          </ion-avatar>
+                <h1 >{{userinfo.name}}</h1>
+                <h2 >Phone : {{userinfo.phone}}.</h2>
+                <p >Last Date of donation : {{userinfo.lastdate}} .</p>
+        </ion-item>
+
+        <div class="ion-list-inset" no-lines>
+   
+              <div class="item item-icon-right" class="listColor" no-lines>
+                <ion-item no-lines (click)="_manage()">
+                    <ion-icon name="settings" item-left></ion-icon>
+                           Manage Account
+                </ion-item>
+                 <ion-item no-lines (click)="_hFeedBack()">
+                    <ion-icon name="help-circle" item-left></ion-icon>
+                            Help
+                </ion-item>
+                <ion-item no-lines (click)="logout()">
+                     <ion-icon name="log-out" item-left></ion-icon> Logout
+                </ion-item>
+                
+                  
+               </div>
+        </div> 
+            
+
+  
+  
+</ion-content>
+

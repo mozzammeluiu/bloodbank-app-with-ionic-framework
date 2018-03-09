@@ -1,0 +1,64 @@
+//deepita start
+
+
+
+
+.card ion-avatar img
+{
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+   
+    
+}
+.ava
+{
+    //background-color: rgba(169, 0, 0, 0.6);
+    background-image: linear-gradient(rgba(97, 11, 11, 0.7),rgba(97, 11, 11, 0.7)), url('../assets/blood.jpg');
+    // background-image: linear-gradient(rgba(90, 10, 9, 0.4),rgba(97, 11, 11, 0.6)), url('../assets/blood.jpg');
+    //background-size: cover;
+    //background-position: center;
+    color: white;
+    font-size: 20px;
+
+}
+.ava h1
+{
+//font-style:oblique;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ava h2
+{
+ color: coral;
+ font-weight: 500;
+ font-size: 18px;
+ //font-family: Arial, Helvetica, sans-serif;
+}
+.ava p
+{
+    color: yellowgreen;
+    font-size: 16px;
+    font-weight: 400;
+    //font-family: Arial, Helvetica, sans-serif;
+}
+
+.listColor ion-item
+{
+    background-color:rgba(169, 0, 0,0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.listColor ion-item:hover
+{
+    background-color:rgba(0, 0, 0,0.3);
+    color: yellow;
+    font-size: 22px;
+}
+
+
+//deepita end.
